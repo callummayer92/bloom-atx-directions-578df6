@@ -115,26 +115,8 @@
           </ol>
         </div>
 
-        <!-- Buy box: Add to Cart + Subscribe & Save -->
+        <!-- Buy box: Add to Cart -->
         <div class="buybox">
-          <label class="purchase-opt" id="optOne">
-            <input type="radio" name="purchase" value="one-time" checked />
-            <span class="po-body">
-              <span class="po-title">One-time purchase</span>
-              <span class="po-desc">A single jar, shipped once.</span>
-            </span>
-            <span class="po-price">$45</span>
-          </label>
-
-          <label class="purchase-opt is-selected" id="optSub">
-            <input type="radio" name="purchase" value="subscribe" />
-            <span class="po-body">
-              <span class="po-title">Subscribe &amp; Save <span class="po-save">20% OFF</span></span>
-              <span class="po-desc">Free shipping · delivered every 4 weeks · skip or cancel anytime.</span>
-            </span>
-            <span class="po-price">$36</span>
-          </label>
-
           <div class="qty-row">
             <span style="font-weight:600;color:var(--ink);">Quantity</span>
             <span class="qty-stepper">
@@ -239,7 +221,7 @@
           </figure>
           <figure class="review-card">
             <div class="stars" aria-label="5 out of 5 stars">★★★★★</div>
-            <blockquote>"Subscribed after the first jar. Tastes great, works every night, and I love that I can scan the lab report."</blockquote>
+            <blockquote>"Bought another jar the week after my first. Tastes great, works every night, and I love that I can scan the lab report."</blockquote>
             <figcaption class="review-meta"><span class="avatar">L</span><span><span class="rm-name">Lauren D.</span><br><span class="rm-need">Verified · Sleep</span></span></figcaption>
           </figure>
         </div>
@@ -309,7 +291,7 @@
           <li><a href="index.html#shop">Calm</a></li>
           <li><a href="index.html#shop">Focus</a></li>
           <li><a href="index.html#shop">Relief</a></li>
-          <li><a href="index.html#bundles">Bundles &amp; Subscribe</a></li>
+          <li><a href="index.html#bundles">Bundles</a></li>
         </ul>
       </div>
       <div class="footer-col">
@@ -371,35 +353,20 @@
         });
       });
 
-      // Purchase option + qty -> price
-      var unit = { 'one-time': 45, 'subscribe': 36 };
+      // Qty -> price (one-time purchase only)
+      var unitPrice = 45;
       var qty = 1;
       var atc = document.getElementById('atcPrice');
       var qVal = document.getElementById('qVal');
-      function selected() {
-        var r = document.querySelector('input[name="purchase"]:checked');
-        return r ? r.value : 'one-time';
-      }
       function render() {
-        var price = unit[selected()] * qty;
-        if (atc) atc.textContent = '$' + price;
+        if (atc) atc.textContent = '$' + (unitPrice * qty);
         if (qVal) qVal.textContent = qty;
       }
-      document.querySelectorAll('input[name="purchase"]').forEach(function (r) {
-        r.addEventListener('change', function () {
-          document.querySelectorAll('.purchase-opt').forEach(function (o) { o.classList.remove('is-selected'); });
-          r.closest('.purchase-opt').classList.add('is-selected');
-          render();
-        });
-      });
       var plus = document.getElementById('qPlus');
       var minus = document.getElementById('qMinus');
       if (plus) plus.addEventListener('click', function () { qty++; render(); });
       if (minus) minus.addEventListener('click', function () { if (qty > 1) qty--; render(); });
 
-      // Default selection = one-time (checked in markup)
-      document.getElementById('optSub').classList.remove('is-selected');
-      document.getElementById('optOne').classList.add('is-selected');
       render();
     })();
   </script>

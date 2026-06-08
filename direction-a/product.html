@@ -138,37 +138,10 @@
             </div>
           </div>
 
-          <!-- purchase options -->
-          <div class="purchase" id="purchase">
-            <div class="purchase__opt" data-selected="true" data-opt="once">
-              <span class="purchase__radio" aria-hidden="true"></span>
-              <div class="purchase__body">
-                <div class="purchase__head">
-                  <span class="purchase__title">One-time purchase</span>
-                  <span class="purchase__price">$45</span>
-                </div>
-                <p class="purchase__desc">A single jar, shipped once. No commitment.</p>
-              </div>
-            </div>
-            <div class="purchase__opt" data-opt="sub">
-              <span class="purchase__radio" aria-hidden="true"></span>
-              <div class="purchase__body">
-                <div class="purchase__head">
-                  <span class="purchase__title">Subscribe &amp; Save <span class="purchase__save">SAVE 25%</span></span>
-                  <span class="purchase__price"><s>$45</s>$33.75</span>
-                </div>
-                <p class="purchase__desc">Free shipping every order. Skip, pause or cancel anytime.</p>
-                <div class="purchase__freq">
-                  <label for="freq" style="font-size:0.78rem;color:var(--ink-soft);display:block;margin-bottom:0.3rem;">Deliver every</label>
-                  <select id="freq">
-                    <option>2 weeks</option>
-                    <option selected>4 weeks</option>
-                    <option>6 weeks</option>
-                    <option>8 weeks</option>
-                  </select>
-                </div>
-              </div>
-            </div>
+          <!-- price -->
+          <div class="buybox__price-row">
+            <span class="buybox__price">$45</span>
+            <span class="buybox__price-note">A single jar, shipped once. No commitment.</span>
           </div>
 
           <!-- qty + add to cart -->
@@ -220,7 +193,7 @@
             <span class="eyebrow">Why people reach for it</span>
             <h2>A calm landing at the end of the day</h2>
             <p class="lede" style="margin-bottom:1.2rem;">Nightcap pairs <strong>CBG</strong> — a minor cannabinoid associated with calm — with a gentle <strong>5mg microdose of THC</strong> to help quiet a busy mind and ease the transition into rest. It's the formula we reach for when tomorrow can wait.</p>
-            <p style="color:var(--ink-soft);">Like all cannabinoids, Nightcap works best as a consistent ritual. Many people notice their sleep routine settles over <strong>two to four weeks</strong> of nightly use — which is exactly why we offer a subscription. <em class="serif-italic">May support a restful evening wind-down. Individual results vary.</em></p>
+            <p style="color:var(--ink-soft);">Like all cannabinoids, Nightcap works best as a consistent ritual. Many people notice their sleep routine settles over <strong>two to four weeks</strong> of nightly use — so it's worth keeping a jar on the nightstand. <em class="serif-italic">May support a restful evening wind-down. Individual results vary.</em></p>
           </div>
         </div>
 
@@ -341,8 +314,8 @@
           </article>
           <article class="review-card">
             <div class="review-card__stars" aria-label="4 out of 5 stars">★★★★☆</div>
-            <span class="review-card__need">Subscriber</span>
-            <blockquote>"On my third month subscribing. Took a couple weeks to really settle into my routine, but now it's a non-negotiable part of my evening."</blockquote>
+            <span class="review-card__need">Nightly ritual</span>
+            <blockquote>"Three months in now. Took a couple weeks to really settle into my routine, but now it's a non-negotiable part of my evening."</blockquote>
             <div class="review-card__who">
               <span class="review-card__avatar">AW</span>
               <span class="meta"><strong>Aisha W.</strong><span>Verified buyer</span></span>
@@ -510,27 +483,17 @@
         'display:flex;position:absolute;top:78px;left:0;right:0;flex-direction:column;gap:0;background:var(--cream);padding:1rem var(--gutter);box-shadow:var(--shadow-md);border-bottom:1px solid rgba(34,80,63,0.1);';
     });
 
-    // ---- Purchase option toggle + price sync ----
+    // ---- Price sync ----
     (function () {
-      var opts = document.querySelectorAll('.purchase__opt');
       var cartPrice = document.getElementById('cartPrice');
       var qtyInput = document.getElementById('qty');
-      var prices = { once: 45, sub: 33.75 };
-      var current = 'once';
+      var unitPrice = 45;
 
       function fmt(n) { return '$' + (Number.isInteger(n) ? n : n.toFixed(2)); }
       function refresh() {
         var q = Math.max(1, parseInt(qtyInput.value, 10) || 1);
-        cartPrice.textContent = fmt(prices[current] * q);
+        cartPrice.textContent = fmt(unitPrice * q);
       }
-      opts.forEach(function (opt) {
-        opt.addEventListener('click', function () {
-          opts.forEach(function (o) { o.setAttribute('data-selected', 'false'); });
-          opt.setAttribute('data-selected', 'true');
-          current = opt.getAttribute('data-opt');
-          refresh();
-        });
-      });
 
       // qty steppers
       document.getElementById('qtyPlus').addEventListener('click', function () {

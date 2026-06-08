@@ -156,39 +156,11 @@
             </div>
           </div>
 
-          <!-- Purchase options: one-time vs subscribe -->
-          <fieldset class="purchase" style="border:1px solid var(--line-strong);padding:0;margin:0 0 1rem">
-            <legend class="visually-hidden">Choose purchase option</legend>
-            <label class="purchase__opt" id="opt-once">
-              <input type="radio" name="purchase" value="once" />
-              <span class="purchase__opt-main">
-                <span class="purchase__opt-title">
-                  <b>One-time purchase</b>
-                  <span class="price">$45.00</span>
-                </span>
-                <span class="purchase__opt-sub">Ships once. No commitment.</span>
-              </span>
-            </label>
-            <label class="purchase__opt is-selected" id="opt-sub">
-              <input type="radio" name="purchase" value="subscribe" checked />
-              <span class="purchase__opt-main">
-                <span class="purchase__opt-title">
-                  <b>Subscribe &amp; Save <span class="save-flag">Save 25%</span></b>
-                  <span class="price"><s>$45.00</s> $33.75</span>
-                </span>
-                <span class="purchase__opt-sub">First order 25% off, then 20% ongoing · free shipping · skip or cancel anytime.</span>
-                <span class="freq">
-                  <label for="freq">Deliver every</label>
-                  <select id="freq" name="freq">
-                    <option>2 weeks</option>
-                    <option selected>4 weeks</option>
-                    <option>6 weeks</option>
-                    <option>8 weeks</option>
-                  </select>
-                </span>
-              </span>
-            </label>
-          </fieldset>
+          <!-- Price -->
+          <div class="purchase-price" style="margin:0 0 1rem">
+            <span class="price" style="font-size:1.4rem;font-weight:700">$45.00</span>
+            <span class="purchase__opt-sub" style="display:block">Ships once. No commitment.</span>
+          </div>
 
           <!-- Qty + add to cart -->
           <div class="qty-add">
@@ -197,7 +169,7 @@
               <input type="number" id="qty-input" value="1" min="1" max="12" aria-label="Quantity" />
               <button type="button" id="qty-plus" aria-label="Increase quantity">+</button>
             </div>
-            <button class="btn btn--primary btn--lg" style="flex:1">Add to cart · <span id="atc-price">$33.75</span></button>
+            <button class="btn btn--primary btn--lg" style="flex:1">Add to cart · <span id="atc-price">$45.00</span></button>
           </div>
 
           <!-- COA link (PDP-level) -->
@@ -246,7 +218,7 @@
         </div>
         <div class="dose-callout">
           <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 8v5M12 16h.01"/></svg>
-          <span><b>Give it time.</b> Cannabinoid benefits often build over 2–4 weeks of consistent nightly use — which is exactly why we offer Subscribe &amp; Save.</span>
+          <span><b>Give it time.</b> Cannabinoid benefits often build over 2–4 weeks of consistent nightly use — so consistency matters — most people make it part of their nightly routine.</span>
         </div>
       </section>
 
@@ -424,7 +396,7 @@
         <a href="index.html#shop-need">Focus &amp; Energy</a>
         <a href="index.html#shop-need">Relief &amp; Recovery</a>
         <a href="index.html#products">Shop all</a>
-        <a href="index.html#subscribe">Subscribe &amp; Save</a>
+        <a href="index.html#bundles">Bundles</a>
       </div>
       <div class="footer__col">
         <h4>Transparency</h4>
@@ -487,17 +459,6 @@
           t.classList.add('is-active');
         });
       });
-
-      // Purchase option selected styling + price sync
-      var opts = document.querySelectorAll('.purchase__opt input');
-      var atc = document.getElementById('atc-price');
-      var PRICE = { once: '$45.00', subscribe: '$33.75' };
-      function syncPrice() {
-        opts.forEach(function (o) { o.closest('.purchase__opt').classList.toggle('is-selected', o.checked); });
-        var sel = document.querySelector('.purchase__opt input:checked');
-        if (sel && atc) atc.textContent = PRICE[sel.value];
-      }
-      opts.forEach(function (o) { o.addEventListener('change', syncPrice); });
 
       // Qty stepper
       var input = document.getElementById('qty-input');
