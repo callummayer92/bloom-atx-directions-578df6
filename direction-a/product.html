@@ -1,0 +1,560 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Nightcap Gummies — Berry Medley | Bloom Botanicals ATX</title>
+  <meta name="description" content="Nightcap Gummies by Bloom Botanicals ATX — 10mg CBG + 5mg THC, Berry Medley. Physician-formulated for restful sleep. Third-party lab-tested, per-batch COA. 21+." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400..600;1,9..144,400..500&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <!-- ============================ AGE GATE ============================ -->
+  <div class="age-gate" id="ageGate" hidden>
+    <div class="age-gate__card" role="dialog" aria-modal="true" aria-labelledby="ageGateTitle">
+      <img class="age-gate__owl" src="../assets/bloom-owl-logo.png" alt="Bloom Botanicals ATX owl" />
+      <h2 id="ageGateTitle">Before you bloom</h2>
+      <p>Our products contain hemp-derived cannabinoids, including microdosed THC. You must be <strong>21 or older</strong> to enter.</p>
+      <div class="age-gate__btns">
+        <button class="btn btn--primary" id="ageYes">I'm 21 or older</button>
+        <button class="btn btn--outline" id="ageNo">I'm under 21</button>
+      </div>
+      <p class="age-gate__legal">By entering, you agree to our Terms of Service and Privacy Policy. We verify age at checkout for products containing THC.</p>
+    </div>
+  </div>
+
+  <!-- ============================ PROMO BAR ============================ -->
+  <div class="promo-bar" role="region" aria-label="Promotions">
+    <span>🌸 <strong>Spring Awakening</strong> — Buy 2, get 20% off + free shipping</span>
+    <span class="sep" aria-hidden="true">·</span>
+    <span class="promo-2">15% off your first order when you join the Bloom Family</span>
+  </div>
+
+  <!-- ============================ HEADER ============================ -->
+  <header class="site-header">
+    <div class="wrap header-inner">
+      <a href="index.html" class="brand" aria-label="Bloom Botanicals ATX home">
+        <img class="brand__owl" src="../assets/bloom-owl-logo.png" alt="" aria-hidden="true" />
+        <span class="brand__name">Bloom<span>BOTANICALS · ATX</span></span>
+      </a>
+      <nav class="nav" aria-label="Primary">
+        <ul class="nav__links">
+          <li><a href="index.html#products">Sleep</a></li>
+          <li><a href="index.html#products">Calm</a></li>
+          <li><a href="index.html#products">Focus</a></li>
+          <li><a href="index.html#products">Relief</a></li>
+          <li><a href="index.html#products" class="nav__shop">Shop All</a></li>
+          <li><a href="index.html#coa">Lab Results</a></li>
+        </ul>
+      </nav>
+      <div class="header-actions">
+        <button class="icon-btn" aria-label="Search">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="7"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+        </button>
+        <a href="#" class="icon-btn" aria-label="Account">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>
+        </a>
+        <button class="icon-btn" aria-label="Cart, 0 items">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="9" cy="21" r="1"/><circle cx="20" cy="21" r="1"/><path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"/></svg>
+          <span class="cart-count">0</span>
+        </button>
+        <button class="icon-btn nav-toggle" aria-label="Menu" id="navToggle">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><line x1="4" y1="7" x2="20" y2="7"/><line x1="4" y1="12" x2="20" y2="12"/><line x1="4" y1="17" x2="20" y2="17"/></svg>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- ============================ BREADCRUMB ============================ -->
+  <nav class="breadcrumb wrap" aria-label="Breadcrumb">
+    <ol>
+      <li><a href="index.html">Home</a></li>
+      <li class="sep" aria-hidden="true">/</li>
+      <li><a href="index.html#products">Sleep</a></li>
+      <li class="sep" aria-hidden="true">/</li>
+      <li aria-current="page">Nightcap Gummies</li>
+    </ol>
+  </nav>
+
+  <main>
+    <!-- ============================ PDP MAIN ============================ -->
+    <section class="pdp wrap">
+      <div class="pdp__grid">
+
+        <!-- GALLERY -->
+        <div class="gallery">
+          <div class="gallery__main">
+            <span class="gallery__tag">Bestseller</span>
+            <img id="galleryMain" src="../assets/3789f35c-d64f-4ce9-b525-802829607a11.png" alt="Nightcap Gummies jar — Berry Medley, 300mg full spectrum" />
+          </div>
+          <div class="gallery__thumbs">
+            <button class="gallery__thumb" aria-current="true" aria-label="View jar, front">
+              <img src="../assets/3789f35c-d64f-4ce9-b525-802829607a11.png" alt="" />
+            </button>
+            <button class="gallery__thumb" aria-label="View collection lineup">
+              <img src="../assets/products-shelf-wide-CRmDXsMz.jpg" alt="" style="width:100%;height:100%;object-fit:cover;border-radius:8px;" />
+            </button>
+            <button class="gallery__thumb" aria-label="View lab testing">
+              <img src="../assets/coa-hero-FD-RbU7w.jpg" alt="" style="width:100%;height:100%;object-fit:cover;border-radius:8px;" />
+            </button>
+          </div>
+        </div>
+
+        <!-- BUY BOX -->
+        <div class="buybox">
+          <p class="buybox__need">Sleep · Evening ritual</p>
+          <h1>Nightcap Gummies</h1>
+          <p class="buybox__flavor">Berry Medley</p>
+          <div class="buybox__rating">
+            <span class="stars" aria-label="4.9 out of 5 stars">★★★★★</span>
+            <span>4.9</span>
+            <a href="#reviews">214 reviews</a>
+          </div>
+
+          <div class="buybox__badges">
+            <span class="badge"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 12l2 2 4-4"/><circle cx="12" cy="12" r="9"/></svg> Third-party tested</span>
+            <span class="badge"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2v6M4.93 10.93l4.24 4.24M2 18h6M22 18h-6M19.07 10.93l-4.24 4.24"/><circle cx="12" cy="14" r="4"/></svg> Physician-formulated</span>
+            <span class="badge"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 12h18M3 6h18M3 18h18"/></svg> &lt;0.3% THC</span>
+          </div>
+
+          <!-- mg / cannabinoid panel -->
+          <div class="dose-panel">
+            <div class="dose-panel__row">
+              <span class="dose-panel__label">Cannabinoids per gummy</span>
+              <span class="dose-panel__cannabinoids">
+                <span class="chip">10mg CBG</span><span class="chip">5mg THC</span>
+              </span>
+            </div>
+            <div class="dose-panel__row">
+              <span class="dose-panel__label">Per jar</span>
+              <span class="dose-panel__val">300mg · 20 count</span>
+            </div>
+            <div class="dose-panel__row">
+              <span class="dose-panel__label">Spectrum</span>
+              <span class="dose-panel__val">Full spectrum</span>
+            </div>
+          </div>
+
+          <!-- purchase options -->
+          <div class="purchase" id="purchase">
+            <div class="purchase__opt" data-selected="true" data-opt="once">
+              <span class="purchase__radio" aria-hidden="true"></span>
+              <div class="purchase__body">
+                <div class="purchase__head">
+                  <span class="purchase__title">One-time purchase</span>
+                  <span class="purchase__price">$45</span>
+                </div>
+                <p class="purchase__desc">A single jar, shipped once. No commitment.</p>
+              </div>
+            </div>
+            <div class="purchase__opt" data-opt="sub">
+              <span class="purchase__radio" aria-hidden="true"></span>
+              <div class="purchase__body">
+                <div class="purchase__head">
+                  <span class="purchase__title">Subscribe &amp; Save <span class="purchase__save">SAVE 25%</span></span>
+                  <span class="purchase__price"><s>$45</s>$33.75</span>
+                </div>
+                <p class="purchase__desc">Free shipping every order. Skip, pause or cancel anytime.</p>
+                <div class="purchase__freq">
+                  <label for="freq" style="font-size:0.78rem;color:var(--ink-soft);display:block;margin-bottom:0.3rem;">Deliver every</label>
+                  <select id="freq">
+                    <option>2 weeks</option>
+                    <option selected>4 weeks</option>
+                    <option>6 weeks</option>
+                    <option>8 weeks</option>
+                  </select>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- qty + add to cart -->
+          <div class="buybox__qty-cart">
+            <div class="qty">
+              <button type="button" aria-label="Decrease quantity" id="qtyMinus">−</button>
+              <input type="number" id="qty" value="1" min="1" aria-label="Quantity" />
+              <button type="button" aria-label="Increase quantity" id="qtyPlus">+</button>
+            </div>
+            <button class="btn btn--primary btn--block btn--lg" style="flex:1;">Add to cart · <span id="cartPrice">$45</span></button>
+          </div>
+
+          <p class="buybox__ship" style="margin-bottom:1.6rem;">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="1" y="3" width="15" height="13" rx="1"/><path d="M16 8h4l3 3v5h-7V8z"/><circle cx="5.5" cy="18.5" r="1.5"/><circle cx="18.5" cy="18.5" r="1.5"/></svg>
+            Free U.S. shipping on orders over $75 · Ships in 1–2 business days
+          </p>
+
+          <!-- WILL THIS GET ME HIGH reassurance -->
+          <div class="buybox__reassure">
+            <span class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg></span>
+            <div>
+              <strong>Will this get me high?</strong>
+              <p>Nightcap is microdosed: 5mg THC is a gentle, restful dose designed to ease you toward sleep — relaxed and drowsy, not intoxicated. Most people feel calm and sleepy, not "stoned." New to THC? Start with half a gummy.</p>
+            </div>
+          </div>
+
+          <!-- COA / lab link -->
+          <a href="index.html#coa" class="coa-link-pdp">
+            <span class="coa-link-pdp__left">
+              <span class="qr-box"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="7" height="7" rx="1"/><rect x="14" y="3" width="7" height="7" rx="1"/><rect x="3" y="14" width="7" height="7" rx="1"/><line x1="14" y1="14" x2="14" y2="21"/><line x1="18" y1="14" x2="18" y2="18"/><line x1="21" y1="14" x2="21" y2="21"/></svg></span>
+              <span>
+                <strong>View this batch's lab report (COA)</strong>
+                <span>Batch #NC-2406A · A2LA / ISO 17025 accredited lab</span>
+              </span>
+            </span>
+            <span class="arrow" aria-hidden="true">
+              <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+            </span>
+          </a>
+        </div>
+      </div>
+
+      <!-- ============================ PDP INFO BLOCKS ============================ -->
+      <div class="pdp-info">
+
+        <!-- Benefits / about -->
+        <div class="pdp-info__block">
+          <div class="wrap-narrow">
+            <span class="eyebrow">Why people reach for it</span>
+            <h2>A calm landing at the end of the day</h2>
+            <p class="lede" style="margin-bottom:1.2rem;">Nightcap pairs <strong>CBG</strong> — a minor cannabinoid associated with calm — with a gentle <strong>5mg microdose of THC</strong> to help quiet a busy mind and ease the transition into rest. It's the formula we reach for when tomorrow can wait.</p>
+            <p style="color:var(--ink-soft);">Like all cannabinoids, Nightcap works best as a consistent ritual. Many people notice their sleep routine settles over <strong>two to four weeks</strong> of nightly use — which is exactly why we offer a subscription. <em class="serif-italic">May support a restful evening wind-down. Individual results vary.</em></p>
+          </div>
+        </div>
+
+        <!-- Dosing -->
+        <div class="pdp-info__block">
+          <div class="wrap-narrow">
+            <span class="eyebrow">Suggested use</span>
+            <h2>Start low, go slow</h2>
+            <div class="dosing-steps">
+              <div class="dosing-step">
+                <div class="num">1</div>
+                <h3>Begin gently</h3>
+                <p>Take half a gummy (≈2.5mg THC) 30–60 minutes before bed, on a light snack. Give it time — gummies take 1–2 hours to peak.</p>
+              </div>
+              <div class="dosing-step">
+                <div class="num">2</div>
+                <h3>Find your dose</h3>
+                <p>Comfortable? Move to a full gummy the next night. Adjust in small steps — there's no rush to find your sweet spot.</p>
+              </div>
+              <div class="dosing-step">
+                <div class="num">3</div>
+                <h3>Make it routine</h3>
+                <p>Use nightly for 2–4 weeks. Cannabinoid benefits build with consistency, so a steady ritual beats the occasional gummy.</p>
+              </div>
+            </div>
+            <div class="dosing-note">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><line x1="12" y1="16" x2="12" y2="12"/><line x1="12" y1="8" x2="12.01" y2="8"/></svg>
+              <span><strong>Onset &amp; duration:</strong> Effects typically begin in 1–2 hours and last up to ~8 hours. Because THC may cause drowsiness, take Nightcap only when you're settled in for the night — never before driving or operating machinery.</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Ingredients -->
+        <div class="pdp-info__block">
+          <div class="wrap-narrow">
+            <span class="eyebrow">Full transparency</span>
+            <h2>Ingredients</h2>
+            <ul class="ingredients-list">
+              <li><span>Full-spectrum hemp extract</span><span class="amt">15mg / gummy</span></li>
+              <li><span>Cannabigerol (CBG)</span><span class="amt">10mg</span></li>
+              <li><span>Delta-9 THC (hemp-derived)</span><span class="amt">5mg</span></li>
+              <li><span>Organic cane sugar</span><span class="amt">—</span></li>
+              <li><span>Organic tapioca syrup</span><span class="amt">—</span></li>
+              <li><span>Pectin (vegan)</span><span class="amt">—</span></li>
+              <li><span>Natural berry flavor</span><span class="amt">—</span></li>
+              <li><span>Citric acid · natural color</span><span class="amt">—</span></li>
+            </ul>
+            <p style="font-size:0.84rem;color:var(--ink-soft);margin-top:1.2rem;">Vegan · gluten-free · non-GMO · made with organic ingredients. Contains hemp-derived THC.</p>
+          </div>
+        </div>
+
+        <!-- FAQ -->
+        <div class="pdp-info__block">
+          <div class="wrap-narrow">
+            <span class="eyebrow">Good to know</span>
+            <h2>Common questions</h2>
+            <details class="faq-item" open>
+              <summary>Will Nightcap make me fail a drug test? <span class="plus" aria-hidden="true"></span></summary>
+              <p>Possibly. Nightcap contains hemp-derived THC, which can trigger a positive result on standard drug screens. If you're subject to testing, we'd recommend our THC-free Mellow Mood instead.</p>
+            </details>
+            <details class="faq-item">
+              <summary>Is this legal? <span class="plus" aria-hidden="true"></span></summary>
+              <p>Nightcap is made from hemp containing less than 0.3% Delta-9 THC on a dry-weight basis, federally compliant under the 2018 Farm Bill. State laws vary, so we ship only where these products are permitted. You must be 21+ to purchase.</p>
+            </details>
+            <details class="faq-item">
+              <summary>How long until it works? <span class="plus" aria-hidden="true"></span></summary>
+              <p>As an edible, Nightcap takes 1–2 hours to take effect and lasts up to ~8 hours. Taking it with a little food can help absorption. For sleep support, the routine matters most — give it 2–4 weeks of nightly use.</p>
+            </details>
+            <details class="faq-item">
+              <summary>Can I take it with other medications? <span class="plus" aria-hidden="true"></span></summary>
+              <p>Cannabinoids can interact with certain medications. Please consult your physician before use, especially if you take other medication or are pregnant or nursing.</p>
+            </details>
+            <details class="faq-item">
+              <summary>Where does Bloom ship? <span class="plus" aria-hidden="true"></span></summary>
+              <p>We ship within the United States only, and only to states where hemp-derived THC products are permitted. Orders ship in 1–2 business days; free shipping over $75.</p>
+            </details>
+          </div>
+        </div>
+
+        <!-- Disclaimer -->
+        <div class="pdp-info__block" style="border-bottom:none;">
+          <div class="wrap-narrow">
+            <div class="pdp-disclaimer">
+              <p><strong>21+ only.</strong> These statements have not been evaluated by the Food and Drug Administration. This product is not intended to diagnose, treat, cure, or prevent any disease. Contains hemp-derived THC and may be intoxicating — do not drive or operate machinery after use. May cause a failed drug test. Keep out of reach of children and pets. Consult your physician before use, especially if pregnant, nursing, or taking medication. Hemp-derived; less than 0.3% Delta-9 THC. Ships within the U.S. only. Age and identity verified at checkout.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================ REVIEWS ============================ -->
+    <section class="section reviews" id="reviews" style="background:var(--white);">
+      <div class="wrap">
+        <div class="reviews__head">
+          <div class="reviews__stars" aria-hidden="true">★★★★★</div>
+          <span class="eyebrow">Nightcap reviews</span>
+          <h2>4.9 out of 5</h2>
+          <p class="reviews__sub">Based on 214 verified reviews</p>
+        </div>
+        <div class="reviews__grid">
+          <article class="review-card">
+            <div class="review-card__stars" aria-label="5 out of 5 stars">★★★★★</div>
+            <span class="review-card__need">Falls asleep faster</span>
+            <blockquote>"Half a gummy and I'm out within the hour — and I wake up clear-headed, not foggy. Genuinely the best sleep aid I've tried."</blockquote>
+            <div class="review-card__who">
+              <span class="review-card__avatar">MK</span>
+              <span class="meta"><strong>Maria K.</strong><span>Verified buyer · Austin, TX</span></span>
+            </div>
+          </article>
+          <article class="review-card">
+            <div class="review-card__stars" aria-label="5 out of 5 stars">★★★★★</div>
+            <span class="review-card__need">Calm, not stoned</span>
+            <blockquote>"I was nervous about the THC, but the microdose is perfect — just relaxed and ready for bed. The 'start low' guidance helped a lot."</blockquote>
+            <div class="review-card__who">
+              <span class="review-card__avatar">TP</span>
+              <span class="meta"><strong>Tom P.</strong><span>Verified buyer</span></span>
+            </div>
+          </article>
+          <article class="review-card">
+            <div class="review-card__stars" aria-label="4 out of 5 stars">★★★★☆</div>
+            <span class="review-card__need">Subscriber</span>
+            <blockquote>"On my third month subscribing. Took a couple weeks to really settle into my routine, but now it's a non-negotiable part of my evening."</blockquote>
+            <div class="review-card__who">
+              <span class="review-card__avatar">AW</span>
+              <span class="meta"><strong>Aisha W.</strong><span>Verified buyer</span></span>
+            </div>
+          </article>
+        </div>
+        <p class="reviews__placeholder-note">Reviews shown are illustrative placeholders for this design direction — to be wired to a verified-reviews app at build.</p>
+      </div>
+    </section>
+
+    <!-- ============================ RELATED ============================ -->
+    <section class="section related">
+      <div class="wrap">
+        <div class="section-head center">
+          <span class="eyebrow">Pairs well with</span>
+          <h2>Complete your ritual</h2>
+        </div>
+        <div class="related__grid">
+          <article class="product-card">
+            <div class="product-card__media">
+              <span class="product-tag product-tag--thcfree">THC-free</span>
+              <img src="../assets/e09c8dc6-c494-4d54-a6cc-db8354c998ee.png" alt="Mellow Mood Gummies jar, blueberry" />
+            </div>
+            <div class="product-card__body">
+              <span class="product-card__need">Calm · Sleep</span>
+              <h3>Mellow Mood</h3>
+              <p class="product-card__flavor">Blueberry</p>
+              <div class="product-card__profile"><span class="chip">8.6mg CBG</span><span class="chip">1.4mg CBGA</span></div>
+              <div class="product-card__foot"><span class="product-card__price">$45</span><a href="product.html" class="add-btn">View</a></div>
+            </div>
+          </article>
+          <article class="product-card">
+            <div class="product-card__media">
+              <span class="product-tag product-tag--new">Beginner</span>
+              <img src="../assets/a9078033-a48c-4f73-ad45-ff1388b63ecf.png" alt="MicroBliss Gummies jar, peach strawberry" />
+            </div>
+            <div class="product-card__body">
+              <span class="product-card__need">Calm · Microdose</span>
+              <h3>MicroBliss</h3>
+              <p class="product-card__flavor">Peach Strawberry</p>
+              <div class="product-card__profile"><span class="chip">2mg CBD</span><span class="chip">1mg THC</span></div>
+              <div class="product-card__foot"><span class="product-card__price">$45</span><a href="product.html" class="add-btn">View</a></div>
+            </div>
+          </article>
+          <article class="product-card">
+            <div class="product-card__media">
+              <img src="../assets/290c608d-75a6-450c-9b06-08ad682e5442.png" alt="Berry Blissful Gummies jar, mixed berry" />
+            </div>
+            <div class="product-card__body">
+              <span class="product-card__need">Calm · Relax</span>
+              <h3>Berry Blissful</h3>
+              <p class="product-card__flavor">Mixed Berry</p>
+              <div class="product-card__profile"><span class="chip">5mg CBD</span><span class="chip">5mg THC</span></div>
+              <div class="product-card__foot"><span class="product-card__price">$45</span><a href="product.html" class="add-btn">View</a></div>
+            </div>
+          </article>
+          <article class="product-card">
+            <div class="product-card__media">
+              <img src="../assets/29d37da1-b872-40b8-bd22-ed788ddb123b.png" alt="Restore Instant Relief topical roll-on" />
+            </div>
+            <div class="product-card__body">
+              <span class="product-card__need">Relief · Recovery</span>
+              <h3>Restore Topical</h3>
+              <p class="product-card__flavor">Menthol + Copaiba</p>
+              <div class="product-card__profile"><span class="chip">CBD + CBDA</span><span class="chip">Copaiba</span></div>
+              <div class="product-card__foot"><span class="product-card__price">$65</span><a href="product.html" class="add-btn">View</a></div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ============================ FOOTER ============================ -->
+  <footer class="footer">
+    <div class="wrap">
+      <div class="footer__top">
+        <div class="footer__brand">
+          <a href="index.html" class="brand" aria-label="Bloom Botanicals ATX home">
+            <img class="brand__owl" src="../assets/bloom-owl-logo.png" alt="" aria-hidden="true" />
+            <span class="brand__name">Bloom<span>BOTANICALS · ATX</span></span>
+          </a>
+          <p>Physician-grade hemp, made approachable. Premium CBD &amp; microdosed-THC wellness, formulated and tested in Austin, Texas.</p>
+          <div class="footer__socials">
+            <a href="#" aria-label="Instagram"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="4"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg></a>
+            <a href="#" aria-label="Facebook"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg></a>
+            <a href="#" aria-label="TikTok"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 12a4 4 0 1 0 4 4V4a5 5 0 0 0 5 5"/></svg></a>
+          </div>
+        </div>
+        <div class="footer__col">
+          <h4>Shop</h4>
+          <ul>
+            <li><a href="index.html#products">Sleep</a></li>
+            <li><a href="index.html#products">Calm</a></li>
+            <li><a href="index.html#products">Focus</a></li>
+            <li><a href="index.html#products">Relief</a></li>
+            <li><a href="index.html#bundles">Bundles</a></li>
+            <li><a href="index.html#quiz">Find Your Formula</a></li>
+          </ul>
+        </div>
+        <div class="footer__col">
+          <h4>Trust &amp; Quality</h4>
+          <ul>
+            <li><a href="index.html#coa">Lab Results / COAs</a></li>
+            <li><a href="index.html#coa">How to Read a COA</a></li>
+            <li><a href="index.html#learn">The Bloom Journal</a></li>
+            <li><a href="#">Our Story</a></li>
+            <li><a href="#">Store Locator</a></li>
+          </ul>
+        </div>
+        <div class="footer__col">
+          <h4>Support</h4>
+          <ul>
+            <li><a href="#">Contact Us</a></li>
+            <li><a href="#">Shipping &amp; Returns</a></li>
+            <li><a href="#">Wholesale / Partner</a></li>
+            <li><a href="#">Terms of Service</a></li>
+            <li><a href="#">Privacy Policy</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer__disclaimer">
+        <div class="footer__age" aria-label="21 plus only">21+</div>
+        <p>
+          <strong>You must be 21 or older to purchase.</strong> These statements have not been evaluated by the Food and Drug Administration. These products are not intended to diagnose, treat, cure, or prevent any disease. Hemp-derived products contain less than 0.3% Delta-9 THC on a dry-weight basis in compliance with the 2018 Farm Bill. Products containing THC may cause a failed drug test and may be intoxicating; do not drive or operate machinery after use. Consult your physician before use, especially if pregnant, nursing, or taking medication. Keep out of reach of children and pets. Ships within the U.S. only; not available where prohibited by state law. Age and identity are verified at checkout for products containing THC.
+        </p>
+      </div>
+
+      <div class="footer__bottom">
+        <span>© 2026 Bloom ATX LLC · Austin, Texas. All rights reserved.</span>
+        <span class="links">
+          <a href="index.html#coa">Lab Results</a>
+          <a href="#">Accessibility</a>
+          <a href="#">Privacy</a>
+          <a href="#">Terms</a>
+        </span>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    // ---- Age gate ----
+    (function () {
+      var gate = document.getElementById('ageGate');
+      var KEY = 'bloom_age_ok';
+      try {
+        if (localStorage.getItem(KEY) !== 'yes') { gate.hidden = false; document.body.style.overflow = 'hidden'; }
+      } catch (e) { gate.hidden = false; document.body.style.overflow = 'hidden'; }
+      document.getElementById('ageYes').addEventListener('click', function () {
+        try { localStorage.setItem(KEY, 'yes'); } catch (e) {}
+        gate.hidden = true; document.body.style.overflow = '';
+      });
+      document.getElementById('ageNo').addEventListener('click', function () {
+        document.querySelector('.age-gate__card').innerHTML =
+          '<h2>Come back soon</h2><p style="margin-bottom:0;">You must be 21 or older to visit Bloom Botanicals ATX. Thanks for understanding.</p>';
+      });
+    })();
+
+    // ---- Mobile nav ----
+    document.getElementById('navToggle').addEventListener('click', function () {
+      var links = document.querySelector('.nav__links');
+      var open = links.style.display === 'flex';
+      links.style.cssText = open ? '' :
+        'display:flex;position:absolute;top:78px;left:0;right:0;flex-direction:column;gap:0;background:var(--cream);padding:1rem var(--gutter);box-shadow:var(--shadow-md);border-bottom:1px solid rgba(34,80,63,0.1);';
+    });
+
+    // ---- Purchase option toggle + price sync ----
+    (function () {
+      var opts = document.querySelectorAll('.purchase__opt');
+      var cartPrice = document.getElementById('cartPrice');
+      var qtyInput = document.getElementById('qty');
+      var prices = { once: 45, sub: 33.75 };
+      var current = 'once';
+
+      function fmt(n) { return '$' + (Number.isInteger(n) ? n : n.toFixed(2)); }
+      function refresh() {
+        var q = Math.max(1, parseInt(qtyInput.value, 10) || 1);
+        cartPrice.textContent = fmt(prices[current] * q);
+      }
+      opts.forEach(function (opt) {
+        opt.addEventListener('click', function () {
+          opts.forEach(function (o) { o.setAttribute('data-selected', 'false'); });
+          opt.setAttribute('data-selected', 'true');
+          current = opt.getAttribute('data-opt');
+          refresh();
+        });
+      });
+
+      // qty steppers
+      document.getElementById('qtyPlus').addEventListener('click', function () {
+        qtyInput.value = (parseInt(qtyInput.value, 10) || 1) + 1; refresh();
+      });
+      document.getElementById('qtyMinus').addEventListener('click', function () {
+        qtyInput.value = Math.max(1, (parseInt(qtyInput.value, 10) || 1) - 1); refresh();
+      });
+      qtyInput.addEventListener('input', refresh);
+    })();
+
+    // ---- Gallery thumb swap ----
+    (function () {
+      var main = document.getElementById('galleryMain');
+      var thumbs = document.querySelectorAll('.gallery__thumb');
+      thumbs.forEach(function (t) {
+        t.addEventListener('click', function () {
+          var img = t.querySelector('img');
+          main.src = img.getAttribute('src');
+          thumbs.forEach(function (x) { x.setAttribute('aria-current', 'false'); });
+          t.setAttribute('aria-current', 'true');
+        });
+      });
+    })();
+  </script>
+</body>
+</html>

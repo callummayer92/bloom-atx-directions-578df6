@@ -1,0 +1,635 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Bloom Botanicals ATX — Physician-Grade Hemp, Tested Every Batch</title>
+  <meta name="description" content="Premium, physician-formulated hemp wellness from Austin, TX. CBD + microdosed THC gummies and topicals — third-party lab tested, every batch. Shop by need: Sleep, Calm, Focus, Relief." />
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400..600;1,9..144,400..600&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+
+  <link rel="icon" href="../assets/bloom-owl-logo.png" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <!-- ===================== Announcement bar ===================== -->
+  <div class="announce" role="region" aria-label="Promotions">
+    <div class="announce__inner">
+      <span>🌸 <strong>Spring Awakening</strong> — Buy 2, get 20% off + free shipping</span>
+      <span aria-hidden="true">·</span>
+      <a href="#capture">Get 15% off your first order →</a>
+    </div>
+  </div>
+
+  <!-- ===================== Header ===================== -->
+  <header class="site-header">
+    <div class="container header__inner">
+      <a href="index.html" class="brand" aria-label="Bloom Botanicals ATX home">
+        <img src="../assets/bloom-owl-logo.png" alt="" class="brand__owl" />
+        <span class="brand__word">
+          <span class="brand__name">Bloom</span>
+          <span class="brand__sub">Botanicals ATX</span>
+        </span>
+      </a>
+
+      <nav class="nav" aria-label="Primary">
+        <a href="#shop-need"><span class="need-dot dot-sleep" aria-hidden="true"></span>Sleep</a>
+        <a href="#shop-need"><span class="need-dot dot-calm" aria-hidden="true"></span>Calm</a>
+        <a href="#shop-need"><span class="need-dot dot-focus" aria-hidden="true"></span>Focus</a>
+        <a href="#shop-need"><span class="need-dot dot-relief" aria-hidden="true"></span>Relief</a>
+        <a href="#products">Shop All</a>
+        <a href="#coa">Lab Results</a>
+      </nav>
+
+      <div class="header__actions">
+        <button class="icon-btn" aria-label="Search">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="m21 21-4.3-4.3"/></svg>
+        </button>
+        <button class="icon-btn" aria-label="Account">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><circle cx="12" cy="8" r="4"/><path d="M4 21c0-4 4-6 8-6s8 2 8 6"/></svg>
+        </button>
+        <button class="icon-btn cart-btn" aria-label="Cart, 2 items">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M6 6h15l-1.5 9h-12z"/><circle cx="9" cy="20" r="1.4"/><circle cx="18" cy="20" r="1.4"/><path d="M6 6 5 3H2"/></svg>
+          <span class="cart-count" aria-hidden="true">2</span>
+        </button>
+        <button class="icon-btn hamburger" id="hamburger" aria-label="Menu" aria-expanded="false">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M3 6h18M3 12h18M3 18h18"/></svg>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- ===================== HERO ===================== -->
+    <section class="hero">
+      <div class="container hero__grid">
+        <div class="hero__content">
+          <span class="eyebrow">Physician-formulated · Austin, TX</span>
+          <h1 class="h1 hero__title">Third-party tested,<br><em>every single batch.</em></h1>
+          <p class="lede">Physician-grade hemp wellness, made approachable. Precise cannabinoid formulas, transparent lab data, and dosing you can actually understand — so you know exactly what you're taking, and why.</p>
+          <div class="hero__cta-row">
+            <a href="#shop-need" class="btn btn--primary btn--lg">Shop by need</a>
+            <a href="#coa" class="btn btn--ghost btn--lg">See our lab results</a>
+          </div>
+          <ul class="hero__assurances">
+            <li class="assure">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M9 12l2 2 4-4"/><path d="M12 3 4 6v6c0 5 3.5 8 8 9 4.5-1 8-4 8-9V6z"/></svg>
+              Third-party lab tested
+            </li>
+            <li class="assure">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M12 2v20M2 7l10-5 10 5M2 17l10 5 10-5"/></svg>
+              ≤0.3% THC · Farm Bill compliant
+            </li>
+            <li class="assure">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M12 2a5 5 0 0 0-5 5c0 2 1 3 1 5h8c0-2 1-3 1-5a5 5 0 0 0-5-5Z"/><path d="M9 17h6M10 20h4"/></svg>
+              Physician-developed formulas
+            </li>
+          </ul>
+        </div>
+
+        <div class="hero__media">
+          <img class="hero__img" src="../assets/products-shelf-wide-CRmDXsMz.jpg" alt="The full Bloom ATX gummy lineup arranged on a wooden shelf with a golden owl figurine and warm fairy lights." />
+          <div class="data-chip data-chip--tl">
+            <span class="data-chip__icon" aria-hidden="true">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 3v6l-5 9a2 2 0 0 0 2 3h12a2 2 0 0 0 2-3l-5-9V3"/><path d="M8 3h8M7 14h10"/></svg>
+            </span>
+            <span>
+              <span class="data-chip__k">100%</span>
+              <span class="data-chip__l">Batches tested</span>
+            </span>
+          </div>
+          <div class="data-chip data-chip--br">
+            <span class="data-chip__icon" aria-hidden="true">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="m3 13 4-4 4 4 6-6 4 4"/><path d="M3 19h18"/></svg>
+            </span>
+            <span>
+              <span class="data-chip__k">5mg</span>
+              <span class="data-chip__l">Micro-precise dose</span>
+            </span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== Trust strip ===================== -->
+    <section class="trust-strip" aria-label="Why trust Bloom ATX">
+      <div class="container">
+        <div class="trust-strip__inner">
+          <div class="trust-cell">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M9 3v6l-5 9a2 2 0 0 0 2 3h12a2 2 0 0 0 2-3l-5-9V3"/><path d="M8 3h8M7 14h10"/></svg>
+            <strong>A2LA / ISO 17025 lab</strong>
+            <span>Named third-party testing</span>
+          </div>
+          <div class="trust-cell">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><rect x="4" y="4" width="7" height="7" rx="1"/><rect x="13" y="4" width="7" height="7" rx="1"/><rect x="4" y="13" width="7" height="7" rx="1"/><path d="M13 13h3v3M20 16v4M16 20h4"/></svg>
+            <strong>QR on every label</strong>
+            <span>Scan to your batch's COA</span>
+          </div>
+          <div class="trust-cell">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M12 2a5 5 0 0 0-5 5c0 2 1 3 1 5h8c0-2 1-3 1-5a5 5 0 0 0-5-5Z"/><path d="M9 17h6M10 20h4"/></svg>
+            <strong>Physician-formulated</strong>
+            <span>Clinician-developed in TX</span>
+          </div>
+          <div class="trust-cell">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M12 21s-7-4.5-9-9a4.5 4.5 0 0 1 9-2 4.5 4.5 0 0 1 9 2c-2 4.5-9 9-9 9Z"/></svg>
+            <strong>30-day guarantee</strong>
+            <span>Love it or your money back</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== Shop by need ===================== -->
+    <section class="section" id="shop-need">
+      <div class="container">
+        <div class="section-head section-head--center">
+          <span class="eyebrow no-rule" style="justify-content:center">Start with how you want to feel</span>
+          <h2 class="h2">Shop by need</h2>
+          <p class="lede">Tell us the outcome — we'll point you to the right formula. Every product is matched to a need state and a precise cannabinoid profile.</p>
+        </div>
+        <div class="need-grid">
+          <a href="#products" class="need-card need-sleep">
+            <span class="need-card__icon" aria-hidden="true">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M20 14a8 8 0 1 1-9-9 7 7 0 0 0 9 9Z"/></svg>
+            </span>
+            <h3 class="need-card__name">Sleep</h3>
+            <p class="need-card__desc">Wind down and stay down. CBG + microdosed THC for restful nights.</p>
+            <span class="need-card__link">Shop Sleep
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+            </span>
+          </a>
+          <a href="#products" class="need-card need-calm">
+            <span class="need-card__icon" aria-hidden="true">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M12 3c3 4 6 6 6 10a6 6 0 0 1-12 0c0-4 3-6 6-10Z"/></svg>
+            </span>
+            <h3 class="need-card__name">Calm</h3>
+            <p class="need-card__desc">Ease the edge off the day. Mellow, balanced, THC-free options.</p>
+            <span class="need-card__link">Shop Calm
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+            </span>
+          </a>
+          <a href="#products" class="need-card need-focus">
+            <span class="need-card__icon" aria-hidden="true">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg>
+            </span>
+            <h3 class="need-card__name">Focus &amp; Energy</h3>
+            <p class="need-card__desc">Clear-headed daytime support. CBDA + CBGA, no fuzzy haze.</p>
+            <span class="need-card__link">Shop Focus
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+            </span>
+          </a>
+          <a href="#products" class="need-card need-relief">
+            <span class="need-card__icon" aria-hidden="true">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M8 11V7a4 4 0 0 1 8 0v4"/><rect x="5" y="11" width="14" height="9" rx="2"/></svg>
+            </span>
+            <h3 class="need-card__name">Relief &amp; Recovery</h3>
+            <p class="need-card__desc">Target aches and stiffness. Topical + balanced gummy support.</p>
+            <span class="need-card__link">Shop Relief
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+            </span>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== Featured products grid (all 7) ===================== -->
+    <section class="section products" id="products">
+      <div class="container">
+        <div class="section-head">
+          <span class="eyebrow">The full collection</span>
+          <h2 class="h2">Every formula, fully spec'd</h2>
+          <p class="lede">Seven precise formulations. Flavor, cannabinoid profile, and dose shown up front — no guesswork.</p>
+        </div>
+
+        <div class="product-grid">
+          <!-- Get Up Stand Up -->
+          <article class="pcard">
+            <a href="product.html" class="pcard__media">
+              <span class="pcard__tag">Focus</span>
+              <img src="../assets/0b803be7-9f13-4141-9545-272abb5d52e2.png" alt="Get Up Stand Up Gummies jar — Tangerine, coral label." />
+            </a>
+            <div class="pcard__body">
+              <h3 class="pcard__name"><a href="product.html">Get Up Stand Up</a></h3>
+              <p class="pcard__flavor">Tangerine · Daytime clarity</p>
+              <div class="cann-row">
+                <span class="cann-chip">5mg CBDA</span>
+                <span class="cann-chip">5mg CBGA</span>
+              </div>
+              <div class="pcard__foot">
+                <span class="pcard__price">$45 <span>/ 20ct</span></span>
+                <button class="pcard__add">Add</button>
+              </div>
+            </div>
+          </article>
+
+          <!-- Calming Focus -->
+          <article class="pcard">
+            <a href="product.html" class="pcard__media">
+              <span class="pcard__tag">Focus</span>
+              <img src="../assets/c3862e95-d32f-4ffc-96ca-685105f2033a.png" alt="Calming Focus Gummies jar — Lemon, lavender label." />
+            </a>
+            <div class="pcard__body">
+              <h3 class="pcard__name"><a href="product.html">Calming Focus</a></h3>
+              <p class="pcard__flavor">Lemon · Daytime calm</p>
+              <div class="cann-row">
+                <span class="cann-chip">5mg CBD</span>
+                <span class="cann-chip">5mg CBDA</span>
+              </div>
+              <div class="pcard__foot">
+                <span class="pcard__price">$45 <span>/ 20ct</span></span>
+                <button class="pcard__add">Add</button>
+              </div>
+            </div>
+          </article>
+
+          <!-- Mellow Mood -->
+          <article class="pcard">
+            <a href="product.html" class="pcard__media">
+              <span class="pcard__tag pcard__tag--thcfree">THC-Free</span>
+              <img src="../assets/e09c8dc6-c494-4d54-a6cc-db8354c998ee.png" alt="Mellow Mood Gummies jar — Blueberry, purple label." />
+            </a>
+            <div class="pcard__body">
+              <h3 class="pcard__name"><a href="product.html">Mellow Mood</a></h3>
+              <p class="pcard__flavor">Blueberry · Relax (THC-free)</p>
+              <div class="cann-row">
+                <span class="cann-chip">8.6mg CBG</span>
+                <span class="cann-chip">1.4mg CBGA</span>
+              </div>
+              <div class="pcard__foot">
+                <span class="pcard__price">$45 <span>/ 20ct</span></span>
+                <button class="pcard__add">Add</button>
+              </div>
+            </div>
+          </article>
+
+          <!-- Berry Blissful -->
+          <article class="pcard">
+            <a href="product.html" class="pcard__media">
+              <span class="pcard__tag">Relax</span>
+              <img src="../assets/290c608d-75a6-450c-9b06-08ad682e5442.png" alt="Berry Blissful Gummies jar — Mixed Berry, plum label." />
+            </a>
+            <div class="pcard__body">
+              <h3 class="pcard__name"><a href="product.html">Berry Blissful</a></h3>
+              <p class="pcard__flavor">Mixed Berry · Mood &amp; ease</p>
+              <div class="cann-row">
+                <span class="cann-chip">5mg CBD</span>
+                <span class="cann-chip">5mg THC</span>
+              </div>
+              <div class="pcard__foot">
+                <span class="pcard__price">$45 <span>/ 20ct</span></span>
+                <button class="pcard__add">Add</button>
+              </div>
+            </div>
+          </article>
+
+          <!-- Nightcap -->
+          <article class="pcard">
+            <a href="product.html" class="pcard__media">
+              <span class="pcard__tag">Sleep</span>
+              <img src="../assets/3789f35c-d64f-4ce9-b525-802829607a11.png" alt="Nightcap Gummies jar — Berry Medley, dark night-sky label." />
+            </a>
+            <div class="pcard__body">
+              <h3 class="pcard__name"><a href="product.html">Nightcap</a></h3>
+              <p class="pcard__flavor">Berry Medley · Evening / sleep</p>
+              <div class="cann-row">
+                <span class="cann-chip">10mg CBG</span>
+                <span class="cann-chip">5mg THC</span>
+              </div>
+              <div class="pcard__foot">
+                <span class="pcard__price">$45 <span>/ 20ct</span></span>
+                <button class="pcard__add">Add</button>
+              </div>
+            </div>
+          </article>
+
+          <!-- MicroBliss -->
+          <article class="pcard">
+            <a href="product.html" class="pcard__media">
+              <span class="pcard__tag">Beginner</span>
+              <img src="../assets/a9078033-a48c-4f73-ad45-ff1388b63ecf.png" alt="MicroBliss Gummies jar — Peach Strawberry, pink label." />
+            </a>
+            <div class="pcard__body">
+              <h3 class="pcard__name"><a href="product.html">MicroBliss</a></h3>
+              <p class="pcard__flavor">Peach Strawberry · Beginner microdose</p>
+              <div class="cann-row">
+                <span class="cann-chip">2.5mg CBD</span>
+                <span class="cann-chip">2.5mg THC</span>
+              </div>
+              <div class="pcard__foot">
+                <span class="pcard__price">$45 <span>/ 20ct</span></span>
+                <button class="pcard__add">Add</button>
+              </div>
+            </div>
+          </article>
+
+          <!-- Restore topical -->
+          <article class="pcard">
+            <a href="product.html" class="pcard__media">
+              <span class="pcard__tag pcard__tag--topical">Topical</span>
+              <img src="../assets/29d37da1-b872-40b8-bd22-ed788ddb123b.png" alt="Restore Instant Relief topical roll-on — Menthol + Copaiba, blue bottle." />
+            </a>
+            <div class="pcard__body">
+              <h3 class="pcard__name"><a href="product.html">Restore Instant Relief</a></h3>
+              <p class="pcard__flavor">Menthol + Copaiba · Aches &amp; stiffness</p>
+              <div class="cann-row">
+                <span class="cann-chip">850mg total</span>
+                <span class="cann-chip">1:1 CBDA:CBD</span>
+              </div>
+              <div class="pcard__foot">
+                <span class="pcard__price">$65 <span>/ 1.5oz</span></span>
+                <button class="pcard__add">Add</button>
+              </div>
+            </div>
+          </article>
+
+          <!-- Bundle CTA card -->
+          <article class="pcard" style="justify-content:center;align-items:center;text-align:center;background:var(--botanical);color:var(--cream);border-color:var(--botanical)">
+            <div class="pcard__body" style="align-items:center;justify-content:center;gap:.7rem">
+              <span class="eyebrow no-rule" style="color:var(--honey);justify-content:center">Save more</span>
+              <h3 class="pcard__name" style="color:var(--cream)">Build a bundle</h3>
+              <p style="font-size:.85rem;color:rgba(246,241,231,.8);margin:0">Buy 2, get 20% off + free shipping. Mix any formulas.</p>
+              <a href="#subscribe" class="btn btn--primary" style="margin-top:.4rem">Build &amp; save</a>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== COA / transparency block (HERO of Direction B) ===================== -->
+    <section class="section coa" id="coa">
+      <div class="container coa__grid">
+        <div class="coa__content">
+          <span class="eyebrow">Transparency, by default</span>
+          <h2 class="h2">Don't take our word for it. Read the lab report.</h2>
+          <p class="lede">Every batch we make is sent to an independent, A2LA / ISO 17025-accredited lab and tested well beyond the legal minimum. The unique batch number on your jar links straight to its own Certificate of Analysis — scan the QR or look it up.</p>
+
+          <div class="coa__panel-list">
+            <div class="panel-item">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg>
+              Cannabinoid potency
+            </div>
+            <div class="panel-item">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg>
+              Pesticides
+            </div>
+            <div class="panel-item">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg>
+              Heavy metals
+            </div>
+            <div class="panel-item">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg>
+              Microbials &amp; mold
+            </div>
+            <div class="panel-item">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg>
+              Residual solvents
+            </div>
+            <div class="panel-item">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg>
+              Residual THC (≤0.3%)
+            </div>
+          </div>
+
+          <div class="coa__ctas">
+            <a href="#" class="btn btn--primary">Browse all lab results</a>
+            <a href="#" class="btn btn--ghost-light">How to read a COA</a>
+          </div>
+        </div>
+
+        <!-- Specimen lab card -->
+        <div class="coa__card" role="img" aria-label="Example Certificate of Analysis for batch BLM-2406-NC, showing all panels passed.">
+          <div class="coa__card-top">
+            <span class="label">Certificate of Analysis</span>
+            <span class="batch">Batch&nbsp;BLM-2406-NC</span>
+          </div>
+          <img class="coa__card-img" src="../assets/coa-hero-FD-RbU7w.jpg" alt="" />
+          <table class="coa-table">
+            <caption class="visually-hidden">Sample COA results for Nightcap, batch BLM-2406-NC</caption>
+            <thead>
+              <tr><th scope="col">Analyte</th><th scope="col">Result</th><th scope="col">Status</th></tr>
+            </thead>
+            <tbody>
+              <tr><td>CBG</td><td>10.2 mg/serving</td><td><span class="coa-pass">Pass</span></td></tr>
+              <tr><td>&Delta;9-THC</td><td>5.0 mg · 0.21%</td><td><span class="coa-pass">Pass</span></td></tr>
+              <tr><td>Pesticides</td><td>None detected</td><td><span class="coa-pass">Pass</span></td></tr>
+              <tr><td>Heavy metals</td><td>&lt; LOQ</td><td><span class="coa-pass">Pass</span></td></tr>
+              <tr><td>Microbials</td><td>None detected</td><td><span class="coa-pass">Pass</span></td></tr>
+            </tbody>
+          </table>
+          <div class="coa__card-foot">
+            <span class="qr" aria-hidden="true"></span>
+            <span>Scan the QR on your jar to pull this exact report. Tested by A2LA / ISO 17025-accredited lab · 06/2026.</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== Quiz teaser ===================== -->
+    <section class="section" id="quiz">
+      <div class="container">
+        <div class="quiz__inner">
+          <div class="quiz__media">
+            <img src="../assets/formula-finder-hero-D2OlPq_B.jpg" alt="A person sitting calmly in a sunlit room surrounded by plants, eyes closed." />
+          </div>
+          <div class="quiz__body">
+            <span class="eyebrow">Not sure where to start?</span>
+            <h2 class="h2">Find your formula in 60 seconds</h2>
+            <p class="lede">Answer a few questions about your goals, your experience level, and whether you want THC in the mix. We'll match you to the right product and the right dose.</p>
+            <div class="quiz__steps">
+              <span class="quiz-step"><b>1</b> Your goal</span>
+              <span class="quiz-step"><b>2</b> Your experience</span>
+              <span class="quiz-step"><b>3</b> Your match</span>
+            </div>
+            <a href="#" class="btn btn--primary btn--lg" style="align-self:flex-start">Take the quiz</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== Education + Subscribe split ===================== -->
+    <section class="section section--tight">
+      <div class="container split">
+        <!-- Education -->
+        <article class="feature-card">
+          <div class="feature-card__media">
+            <img src="../assets/austin-nature-skyline-w3xDkC-A.jpg" alt="The Austin, Texas skyline at golden hour, framed by green hills and a river." />
+          </div>
+          <div class="feature-card__body">
+            <span class="eyebrow">Learn</span>
+            <h3 class="h3">Understand what you're taking</h3>
+            <p>CBDA, CBGA, CBG, microdosed THC — our minor-cannabinoid formulas are uncommon for a reason. Our Learn hub breaks down how each one works, how to dose, and how to read a lab report, all in plain language.</p>
+            <a href="#" class="btn btn--ghost">Explore the Learn hub</a>
+          </div>
+        </article>
+
+        <!-- Subscribe -->
+        <article class="feature-card sub-card" id="subscribe">
+          <div class="feature-card__media">
+            <img src="../assets/products-shelf-wide-CRmDXsMz.jpg" alt="A selection of Bloom ATX gummy jars lined up together." />
+          </div>
+          <div class="feature-card__body">
+            <span class="sub-badge">Subscribe &amp; Save</span>
+            <h3 class="h3">Cannabinoids work best with consistency</h3>
+            <p>Benefits build over 2–4 weeks of regular use — so a subscription isn't just a discount, it's the recommended way to take it.</p>
+            <ul class="sub-perks">
+              <li><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg> Save 25% on your first order, then 20% ongoing</li>
+              <li><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg> Free shipping on every delivery</li>
+              <li><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg> Choose your cadence · skip or cancel anytime</li>
+            </ul>
+            <a href="#products" class="btn btn--primary">Shop &amp; subscribe</a>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- ===================== Reviews ===================== -->
+    <section class="section reviews" id="reviews">
+      <div class="container">
+        <div class="reviews__head">
+          <div class="section-head" style="margin-bottom:0">
+            <span class="eyebrow">What the Bloom family says</span>
+            <h2 class="h2">Real outcomes, verified buyers</h2>
+          </div>
+          <div>
+            <div class="stars" aria-hidden="true">★★★★★</div>
+            <div class="rating-line"><strong>4.8</strong> / 5 · 1,200+ verified reviews</div>
+          </div>
+        </div>
+
+        <div class="review-grid">
+          <article class="review">
+            <div class="review__stars" aria-label="5 out of 5 stars">★★★★★</div>
+            <span class="review__need">Sleep</span>
+            <p class="review__text">"Nightcap is the first thing that's gotten me a full night without leaving me groggy. The 5mg dose is exactly right — I know precisely what I'm taking."</p>
+            <p class="review__by">Maya R. <span class="verified"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg> Verified buyer</span></p>
+          </article>
+          <article class="review">
+            <div class="review__stars" aria-label="5 out of 5 stars">★★★★★</div>
+            <span class="review__need">Focus</span>
+            <p class="review__text">"Get Up Stand Up actually keeps me clear-headed through afternoon meetings. No fuzzy haze, no crash. The lab transparency is what sold me first."</p>
+            <p class="review__by">Daniel K. <span class="verified"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg> Verified buyer</span></p>
+          </article>
+          <article class="review">
+            <div class="review__stars" aria-label="5 out of 5 stars">★★★★★</div>
+            <span class="review__need">Relief</span>
+            <p class="review__text">"The Restore topical goes to work on my shoulder almost immediately. Being able to scan the QR and see the exact batch report is a level of trust I haven't found elsewhere."</p>
+            <p class="review__by">Priya S. <span class="verified"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg> Verified buyer</span></p>
+          </article>
+        </div>
+        <p class="placeholder-note">Reviews block — to be powered by a reviews app (outcome-specific prompts) at build. Sample content shown.</p>
+      </div>
+    </section>
+
+    <!-- ===================== Email capture ===================== -->
+    <section class="section capture" id="capture">
+      <div class="container capture__inner">
+        <div>
+          <span class="eyebrow">Join the Bloom family</span>
+          <h2 class="h2">Get 15% off your first order</h2>
+          <p class="lede">Plus dosing guides, new-formula drops, and the occasional Austin pop-up invite. No spam, ever.</p>
+          <form class="capture__form" onsubmit="return false;">
+            <label for="email-capture" class="visually-hidden">Email address</label>
+            <input type="email" id="email-capture" name="email" placeholder="you@email.com" required autocomplete="email" />
+            <button type="submit" class="btn btn--primary btn--lg">Get my 15% off</button>
+          </form>
+          <p class="capture__fine">By subscribing you confirm you are 21 or older. We never share your details. US shipping only.</p>
+        </div>
+        <div class="capture__media" style="text-align:center">
+          <div class="capture__offer">15%</div>
+          <div class="capture__offer-sub">off your first order</div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ===================== Footer ===================== -->
+  <footer class="site-footer">
+    <div class="container footer__grid">
+      <div class="footer__brand">
+        <a href="index.html" class="brand" aria-label="Bloom Botanicals ATX home">
+          <img src="../assets/bloom-owl-logo.png" alt="" class="brand__owl" />
+          <span class="brand__word">
+            <span class="brand__name">Bloom</span>
+            <span class="brand__sub">Botanicals ATX</span>
+          </span>
+        </a>
+        <p>Physician-grade hemp wellness, made approachable. Formulated and tested in Austin, Texas.</p>
+      </div>
+
+      <div class="footer__col">
+        <h4>Shop</h4>
+        <a href="#shop-need">Sleep</a>
+        <a href="#shop-need">Calm</a>
+        <a href="#shop-need">Focus &amp; Energy</a>
+        <a href="#shop-need">Relief &amp; Recovery</a>
+        <a href="#products">Shop all</a>
+        <a href="#subscribe">Subscribe &amp; Save</a>
+      </div>
+
+      <div class="footer__col">
+        <h4>Transparency</h4>
+        <a href="#coa" class="coa-foot-link">
+          <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="4" y="4" width="7" height="7" rx="1"/><rect x="13" y="4" width="7" height="7" rx="1"/><rect x="4" y="13" width="7" height="7" rx="1"/><path d="M13 13h7v7h-7z"/></svg>
+          Lab results / COAs
+        </a>
+        <a href="#">How to read a COA</a>
+        <a href="#">Quality &amp; testing</a>
+        <a href="#quiz">Find your formula</a>
+        <a href="#">Learn hub</a>
+        <a href="#">Store locator</a>
+      </div>
+
+      <div class="footer__col">
+        <h4>Support</h4>
+        <a href="#">Contact us</a>
+        <a href="#">Shipping &amp; returns</a>
+        <a href="#">30-day guarantee</a>
+        <a href="#">Wholesale / partner</a>
+        <a href="#">Terms of service</a>
+        <a href="#">Privacy policy</a>
+      </div>
+    </div>
+
+    <div class="container footer__legal">
+      <div class="footer__disclaimer">
+        <span class="age-badge" aria-hidden="true">21+</span>
+        <p style="margin:0">
+          <strong>For adults 21 and older.</strong> These statements have not been evaluated by the Food and Drug Administration. These products are not intended to diagnose, treat, cure, or prevent any disease. Products contain hemp-derived cannabinoids with ≤0.3% &Delta;9-THC on a dry-weight basis, compliant with the 2018 Farm Bill. Keep out of reach of children and pets. Do not use if pregnant or nursing. Consult your physician before use, especially if you take prescription medication or have a medical condition. Some products contain THC and may cause impairment and a positive drug test — do not drive or operate machinery after use. US shipping only; not available in all states.
+        </p>
+      </div>
+      <div class="footer__bottom">
+        <span>© 2026 Bloom ATX LLC. All rights reserved.</span>
+        <span>Austin, Texas · Made with care, tested with rigor.</span>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Minimal vanilla JS: mobile nav toggle only -->
+  <script>
+    (function () {
+      var burger = document.getElementById('hamburger');
+      var nav = document.querySelector('.nav');
+      if (!burger || !nav) return;
+      burger.addEventListener('click', function () {
+        var open = nav.style.display === 'flex';
+        nav.style.display = open ? '' : 'flex';
+        nav.style.flexDirection = 'column';
+        nav.style.position = 'absolute';
+        nav.style.top = '100%';
+        nav.style.left = '0';
+        nav.style.right = '0';
+        nav.style.background = 'var(--cream)';
+        nav.style.padding = '1rem var(--gutter)';
+        nav.style.borderBottom = '1px solid var(--line)';
+        nav.style.alignItems = 'flex-start';
+        nav.style.gap = '.2rem';
+        burger.setAttribute('aria-expanded', String(!open));
+      });
+    })();
+  </script>
+</body>
+</html>

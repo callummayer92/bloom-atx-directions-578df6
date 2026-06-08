@@ -1,0 +1,197 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Bloom ATX — Design Directions & Approach</title>
+<meta name="description" content="Three design directions for Bloom ATX, one brand POV — plus the foundations we'd build into the store no matter which you choose.">
+<meta name="robots" content="noindex, nofollow">
+<meta property="og:title" content="Bloom ATX — Design Directions & Approach">
+<meta property="og:description" content="Three design directions for the new Bloom ATX store, plus the foundations we'd recommend whichever you choose.">
+<meta property="og:image" content="assets/og-image.jpg">
+<meta property="og:type" content="website">
+<link rel="icon" href="assets/bloom-owl-logo.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,600;1,9..144,500&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+  :root{ --botanical:#22503F; --sage:#8FA98E; --honey:#E0A458; --blush:#E9C9C2; --cream:#F6F1E7; --ink:#23211C; --line:#e3ddd0; --muted:#5d5a51; }
+  *{box-sizing:border-box}
+  html{scroll-behavior:smooth}
+  body{margin:0;background:var(--cream);color:var(--ink);font-family:Inter,system-ui,sans-serif;line-height:1.62;-webkit-font-smoothing:antialiased}
+  .wrap{max-width:1120px;margin:0 auto;padding:0 24px}
+  .eyebrow{font-size:12px;letter-spacing:.14em;text-transform:uppercase;color:var(--botanical);font-weight:600;margin:0 0 10px}
+  h1,h2,h3{font-family:Fraunces,Georgia,serif;font-weight:600;color:var(--botanical);line-height:1.15}
+
+  /* Header */
+  header{background:var(--botanical);color:var(--cream);padding:54px 24px 58px;text-align:center}
+  .brandmark{width:74px;height:74px;margin:0 auto 20px;border-radius:50%;background:var(--cream);display:grid;place-items:center;box-shadow:0 4px 16px rgba(0,0,0,.18)}
+  .brandmark img{width:46px;height:46px;display:block}
+  header h1{color:var(--cream);font-size:clamp(30px,4.4vw,48px);margin:0 0 14px}
+  header h1 em{font-style:italic;color:var(--honey)}
+  header p{max-width:640px;margin:0 auto;opacity:.92;font-size:17px}
+
+  section{padding:56px 0}
+  section + section{border-top:1px solid var(--line)}
+  .lead{font-size:18px;color:var(--ink);max-width:720px;margin:0 0 8px}
+  .sub{color:var(--muted);max-width:720px;margin:0 0 28px}
+
+  /* Insights */
+  .insights{display:grid;grid-template-columns:repeat(2,1fr);gap:18px 32px;margin-top:24px}
+  @media(max-width:760px){.insights{grid-template-columns:1fr}}
+  .insight{display:flex;gap:14px;align-items:flex-start}
+  .insight .n{flex:none;width:30px;height:30px;border-radius:999px;background:var(--botanical);color:var(--cream);font-family:Fraunces,serif;font-weight:600;display:grid;place-items:center;font-size:15px;margin-top:2px}
+  .insight p{margin:0;font-size:15px}
+  .insight strong{color:var(--botanical)}
+
+  /* Directions */
+  .grid{display:grid;grid-template-columns:repeat(3,1fr);gap:24px}
+  @media(max-width:880px){.grid{grid-template-columns:1fr}}
+  .card{background:#fff;border:1px solid var(--line);border-radius:16px;overflow:hidden;display:flex;flex-direction:column;box-shadow:0 1px 0 rgba(0,0,0,.02)}
+  .thumb{height:240px;overflow:hidden;background:var(--sage);border-bottom:1px solid var(--line)}
+  .thumb img{width:100%;height:100%;object-fit:cover;object-position:top;display:block}
+  .card-body{padding:22px;display:flex;flex-direction:column;gap:10px;flex:1}
+  .card .tag{font-size:12px;letter-spacing:.1em;text-transform:uppercase;color:var(--honey);font-weight:600;margin:0}
+  .card h3{font-size:21px;margin:0}
+  .card .hook{font-style:italic;color:var(--botanical);font-family:Fraunces,serif;margin:0;font-size:15px}
+  .card p{margin:0;font-size:14.5px;color:var(--muted)}
+  .card .best{font-size:13.5px;color:var(--ink);margin:0}
+  .card .best b{color:var(--botanical)}
+  .links{margin-top:auto;display:flex;gap:10px;padding-top:12px}
+  .btn{flex:1;text-align:center;text-decoration:none;font-weight:600;font-size:14px;padding:11px 12px;border-radius:999px;transition:transform .15s ease}
+  .btn:hover{transform:translateY(-1px)}
+  .btn-home{background:var(--honey);color:var(--botanical)}
+  .btn-pdp{background:transparent;color:var(--botanical);border:1.5px solid var(--botanical)}
+
+  /* Recommendations */
+  .recs{display:grid;grid-template-columns:repeat(2,1fr);gap:16px;margin-top:24px}
+  @media(max-width:760px){.recs{grid-template-columns:1fr}}
+  .rec{background:#fff;border:1px solid var(--line);border-radius:12px;padding:18px 20px}
+  .rec h3{font-size:16px;margin:0 0 5px}
+  .rec p{margin:0;font-size:14px;color:var(--muted)}
+
+  /* Feedback */
+  .feedback{background:var(--botanical);color:var(--cream);border-radius:18px;padding:36px 32px;text-align:center}
+  .feedback h2{color:var(--cream);margin:0 0 12px;font-size:26px}
+  .feedback p{max-width:620px;margin:0 auto 6px;opacity:.92}
+  .feedback .ask{font-weight:600;opacity:1}
+
+  .disclaimer{margin-top:26px;font-size:13px;color:var(--muted);text-align:center;max-width:680px;margin-left:auto;margin-right:auto}
+  footer{text-align:center;padding:30px 24px 48px;color:#8b877c;font-size:13px}
+</style>
+</head>
+<body>
+
+<header>
+  <span class="brandmark"><img src="assets/bloom-owl-logo.png" alt="Bloom ATX"></span>
+  <h1>Design <em>directions</em> for Bloom ATX</h1>
+  <p>We pulled together what we learned about Bloom and the hemp category into three design directions for the new store. Below you'll find a short note on our thinking, the looks to click through, and the foundations we'd recommend whichever direction you choose.</p>
+</header>
+
+<section>
+  <div class="wrap">
+    <p class="eyebrow">Our read on Bloom</p>
+    <h2 style="font-size:clamp(24px,3vw,32px);margin:0 0 14px">Physician-grade hemp, made approachable</h2>
+    <p class="lead">Bloom is physician-formulated and lab-tested, and the store should feel as calm and welcoming as the products themselves. All three directions lead with that — credible and transparent up front, warm in tone. What changes between them is the emphasis.</p>
+    <p class="sub">A few things about how hemp shoppers actually buy shaped every decision below:</p>
+    <div class="insights">
+      <div class="insight"><span class="n">1</span><p><strong>People shop by how they want to feel</strong> — sleep, calm, focus, or relief. So every direction leads with shop-by-need.</p></div>
+      <div class="insight"><span class="n">2</span><p><strong>Trust is what converts.</strong> Hemp buyers are skeptical — visible lab results and physician framing do the heavy lifting.</p></div>
+      <div class="insight"><span class="n">3</span><p><strong>New customers get stuck on dosing.</strong> Plain "start low, go slow" guidance reduces hesitation and returns.</p></div>
+      <div class="insight"><span class="n">4</span><p><strong>It's a regulated category.</strong> A clean 21+ gate and proper disclaimers aren't optional — and done well, they build trust.</p></div>
+      <div class="insight"><span class="n">5</span><p><strong>Most visits are on a phone.</strong> Fast, mobile-first, and uncluttered is the baseline, not a nice-to-have.</p></div>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <p class="eyebrow">React to these</p>
+    <h2 style="font-size:clamp(24px,3vw,32px);margin:0 0 12px">The three directions</h2>
+    <p class="sub">Same brand POV, same content — three different emphases. Each is a live, clickable mockup (homepage + a product page). Best viewed on both desktop and your phone.</p>
+    <div class="grid">
+
+      <div class="card">
+        <div class="thumb"><img src="previews/dir-a-home.png" alt="Direction A — Editorial Botanical homepage"></div>
+        <div class="card-body">
+          <p class="tag">Direction A</p>
+          <h3>Editorial Botanical</h3>
+          <p class="hook">"Clinical hemp, made approachable."</p>
+          <p>Airy, premium, magazine-like. Fraunces-forward storytelling and generous whitespace put the brand and the ritual first. Includes a branded 21+ age gate.</p>
+          <p class="best"><b>Best if</b> Bloom wants to feel like an aspirational wellness label.</p>
+          <div class="links">
+            <a class="btn btn-home" href="direction-a/index.html">Homepage</a>
+            <a class="btn btn-pdp" href="direction-a/product.html">Product</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="thumb"><img src="previews/dir-b-home.png" alt="Direction B — Clinical Clean homepage"></div>
+        <div class="card-body">
+          <p class="tag">Direction B</p>
+          <h3>Clinical Clean</h3>
+          <p class="hook">"Third-party tested, every batch."</p>
+          <p>Transparency as the hero. Lab results shown like a specimen card, cannabinoid facts as crisp UI, every formula "fully spec'd." Precise and credible.</p>
+          <p class="best"><b>Best if</b> proof and precision are the main trust driver.</p>
+          <div class="links">
+            <a class="btn btn-home" href="direction-b/index.html">Homepage</a>
+            <a class="btn btn-pdp" href="direction-b/product.html">Product</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="thumb"><img src="previews/dir-c-home.png" alt="Direction C — Warm Wellness homepage"></div>
+        <div class="card-body">
+          <p class="tag">Direction C</p>
+          <h3>Warm Wellness</h3>
+          <p class="hook">"Calmer days — seven little ways to feel more like you."</p>
+          <p>The friendliest. Honey-and-blush warmth, the Bloom Owl as a recurring guide, community tone ("join the Bloom Family").</p>
+          <p class="best"><b>Best if</b> approachability and a repeat relationship matter most.</p>
+          <div class="links">
+            <a class="btn btn-home" href="direction-c/index.html">Homepage</a>
+            <a class="btn btn-pdp" href="direction-c/product.html">Product</a>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <p class="eyebrow">No matter which you choose</p>
+    <h2 style="font-size:clamp(24px,3vw,32px);margin:0 0 12px">What we'd build into the site — and why</h2>
+    <p class="sub">These foundations come from how hemp shoppers actually buy and from the rules of the category. They carry across all three directions.</p>
+    <div class="recs">
+      <div class="rec"><h3>Shop by need</h3><p>Sleep / Calm / Focus / Relief entry points — matching how people actually shop.</p></div>
+      <div class="rec"><h3>Lab results, front and center</h3><p>A Certificate of Analysis on every product. Visible proof is the #1 trust driver in hemp.</p></div>
+      <div class="rec"><h3>Dosing guidance</h3><p>A plain "start low, go slow" helper — it cuts new-customer hesitation and returns.</p></div>
+      <div class="rec"><h3>"Will this get me high?"</h3><p>Clear, compliant reassurance on each product — it answers the question every new buyer has.</p></div>
+      <div class="rec"><h3>Branded 21+ age gate</h3><p>Required for the category — and a credibility signal when it's on-brand, not bolted on.</p></div>
+      <div class="rec"><h3>FDA disclaimer</h3><p>The correct legal language, handled cleanly and unobtrusively. Non-negotiable for hemp.</p></div>
+      <div class="rec"><h3>A warm, plain-spoken voice</h3><p>Credible facts, in the tone of a knowledgeable friend.</p></div>
+      <div class="rec"><h3>Email capture + welcome offer</h3><p>"Join the Bloom Family," 15% off — builds the list and repeat purchases.</p></div>
+      <div class="rec"><h3>Bundles</h3><p>Multi-pack value — the main lever to lift order value (our recommended alternative to subscriptions).</p></div>
+      <div class="rec"><h3>Self-serve promo blocks</h3><p>Edit announcements and run specials yourself, no developer needed.</p></div>
+      <div class="rec"><h3>Keep your search traffic</h3><p>1:1 redirects from the current site at launch, so existing rankings and links carry over.</p></div>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <div class="feedback">
+      <h2>What we need from you</h2>
+      <p class="ask">Skim all three — on desktop and your phone — and tell us: which direction feels most like Bloom? Anything you love, or want to change?</p>
+      <p>That's it. We'll take your direction and turn it into the real, fully-built store.</p>
+    </div>
+    <p class="disclaimer">These are design directions, not final content — imagery, dosing figures, prices, and reviews are placeholders we'll finalize with you. The goal right now is the <em>look and feel</em>, not the details.</p>
+  </div>
+</section>
+
+<footer>Bloom ATX · Design directions · prepared for Suellen &amp; Forrest</footer>
+</body>
+</html>
